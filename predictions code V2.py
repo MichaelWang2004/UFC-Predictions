@@ -21,6 +21,9 @@ def train_data(data: pd.DataFrame) -> tuple[RandomForestClassifier, list]:
         tuple: A tuple containing:
             - model: The trained Random Forest model.
             - features: The list of feature names used for training.
+
+    Complexity:
+        I'm not sure how to do complexity for a machine learning model
     """
 
     # Define features and target variable.
@@ -61,6 +64,9 @@ def get_fighter_stats(name:str, fighters_data: pd.DataFrame):
         name: Name of fighter to find info about
     Outputs:
         fighters_data: The CSV file which contains information about fighters ("ufc_fighters_modified")
+    Complexity:
+        O(N) where N is the number of rows as we have to look through each row and check the name.
+
     """
 
     fighter_row = fighters_data[fighters_data['name'] == name]
@@ -85,6 +91,9 @@ def predict_fight_winner(fighter1_name:str, fighter2_name:str, model, fighters_d
 
     Outputs:
         None: Prints the likelihood of each fighter winning the fight.
+
+    Complexity:
+        I'm not sure how to do complexity for a machine learning model
     """
 
     # Get stats for both fighters
@@ -125,6 +134,8 @@ def main():
         None
     Outputs:
         None
+    Complexity:
+        I'm not sure how to do complexity for a machine learning model
     """
 
     # Load the datasets
