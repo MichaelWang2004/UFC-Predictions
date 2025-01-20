@@ -149,7 +149,7 @@ def main():
     
     # Allow user to input fighter names for predictions
     while True:
-        print("\Please note that the dataset only contains data up to 2018")
+        print("\nPlease note that the dataset only contains data up to 2018")
         print("\nEnter the names of the two fighters (or type 'exit' to quit):")
         fighter1_name = input("Enter Fighter 1's name: ").strip()
 
